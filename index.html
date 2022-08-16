@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel ="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Assets/Inicial.svg">
 </head>
+<body class="body">
     <header class="header">
         <nav class="nav">
-            <a class="textoAzulClaro">Home</a>
-            <a>Servicios</a>
-            <a>Acerca de Mi</a>
-            <a>Mis habilidades</a>
-            <a>Mi portafolio</a>
-            <a>Contaco</a>
+            <a href="#home" id="home" class="Home">Home</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#Acerca de mi">Acerca de Mi</a>
+            <a href="#Mis habilidades">Mis habilidades</a>
+            <a href="#Portafolio">Mi portafolio</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
-<body class="body">
-    <section class="introduccion">
+    <section class="introduccion" >
         <div class="informacion">
             <div class="infoSoy">
-                <h1><u>Soy</u></h1>
+                <h1>Soy</h1>
+                <div class="subrayado"></div>
                 <p class="nombre">Walter</p>
                 <h2>Marketing y</h2>
                 <h2>diseñador UX/UI</h2>
@@ -37,57 +39,76 @@
             <div class="circulo">
             <img src="./Assets/foto_portafolio_1.svg" class="personalImage">
             </div>
+                <div class="rectangulo_container">
                 <div class="rectangulo">
                     <img src="./Assets/akar-icons_google-fill.png" class="logo_intro">
                     <img src="./Assets/ant-design_amazon-outlined.png" class="logo_intro">
                     <img src="./Assets/bi_spotify.png" class="logo_intro">
+                    </div>
                 </div>
         </div>
         </section>
         <div class="contenido">
-            <h3 class="textoAzulClaro">Acerca de mí</h3>
+            <h3 id="Acerca de mi" class="textoAzulClaro" >Acerca de mí</h3>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat at laudantium incidunt rem soluta quia maxime blanditiis laborum sint hic, rerum atque! Quasi, mollitia nisi corrupti voluptas quos soluta.</h4>
-            <h3 class="textoAzulClaro">Servicios</h3>
-            <div class="servicios">
-                <div class="pencil">
-                <img src="./Assets/iconoir_design-pencil.svg"><br><br>
+        </div>
+        <div class="servicio">
+            <div h3 id="servicios" class="textoAzulClaro">Servicios</h3>
+                </div>
+            <div class="contenido_servicios">
+                    <div class="pencil">
+                    <img class="logo_servicios" src="./Assets/iconoir_design-pencil.svg"><br><br>
                     <a class="titulo_viñeta">UX/UI Desing</a><br><br>
                     <a class="parrafo_viñeta">Desde diseño hasta la implementacion del desarrollo</a>
-                </div>
-                <div class="corneta">
-                <img src="./Assets/majesticons_speakerphone-line.svg"><br><br>
-                <a class="titulo_viñeta">Marketing</a><br><br>
-                <a class="parrafo_viñeta">Desde diseño hasta la implementacion del desarrollo</a>
-                </div>
-                <div class="lupa">
-                    <img src="./Assets/feather_search.svg"><br><br>
+                    </div>
+                    <div class="corneta">
+                    <img class="logo_servicios"src="./Assets/majesticons_speakerphone-line.svg"><br><br>
+                    <a class="titulo_viñeta">Marketing</a><br><br>
+                    <a class="parrafo_viñeta">Desde diseño hasta la implementacion del desarrollo</a>
+                    </div>
+                    <div class="lupa">
+                    <img class="logo_servicios"src="./Assets/feather_search.svg"><br><br>
                     <a class="titulo_viñeta">Research</a><br><br>
                     <a class="parrafo_viñeta">Desde diseño hasta la implementacion del desarrollo</a>
-                </div>
-            </div>
-            <div class="barras">
-                <h3 class="textoAzulClaro">Mis habilidades</h3>
-                    <p class="w3-wide">Web design</p>
-                <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:80%"></div>
                     </div>
-                <p class="w3-wide">Interaction design</p>
-                <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-                </div>
-                <p class="w3-wide">UX</p>
-                <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-                </div><br>
             </div>
-            <h3 class="textoAzulClaro">Mis portafolio</h3>
-            <div class="portafolio">
+            </div>
+        </div>
+            
+            <div class="barras">
+                <h3 id="Mis habilidades" class="textoAzulClaro">Mis habilidades</h3>
+                <div class="barra">
+                    <div class="texto_porcentaje">
+                        <div class="viñeta_y_porcentaje">
+                        <a class="viñeta">Web design</a><a class="porcentaje">80%</a></div>
+                        <div class="porcentaje_blanco">
+                        <div class="porcentaje_azul" style="height:20px;width:80%"> </div>
+                    </div>
+                    </div>
+                    <div class="texto_porcentaje">
+                        <div class="viñeta_y_porcentaje">
+                        <a class="viñeta">Interaction design</a><a class="porcentaje">95%</a></div>
+                        <div class="porcentaje_blanco">
+                        <div class="porcentaje_azul" style="height:20px;width:95%"> </div>
+                    </div>
+                    <div class="texto_porcentaje">
+                        <div class="viñeta_y_porcentaje">
+                        <a class="viñeta">UX</a><a class="porcentaje">80%</a></div>
+                        <div class="porcentaje_blanco">
+                        <div class="porcentaje_azul" style="height:20px;width:80%"> </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div  class="portafolio">
+                <h3 id="Portafolio" class="textoAzulClaro">Mi portafolio</h3>
                 <img class="imagenes" src="./Assets/Rectangle 65.jpg">
                 <img class="imagenes" src="./Assets/image 4.jpg">
                 <img class="imagenes" src="./Assets/Rectangle 53.jpg">
                 <img class="imagenes" src="./Assets/Group 47.jpg">
             </div>
-            <div class="contacto">
+            <div id="contacto" class="contacto">
             <h3 class="textoAzulClaro">Contacto</h3>
                 <div class="celular">
                     <img class="medios" src="./Assets/phone 3.svg"><br>
@@ -102,5 +123,7 @@
             </div>
 </body>
 <footer>
-    <a class="texto_final">Hecho con en academlo</a>
+    <div class="texto_final">
+        <a>Hecho con <img class="heart" src="./Assets/heart.png"> en Academlo</a>
+    </div>
 </html>
