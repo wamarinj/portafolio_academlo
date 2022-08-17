@@ -7,20 +7,27 @@
     <title>Portafolio</title>
     <link rel ="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./Assets/Inicial.svg">
+    <script src="./index.js"></script>
 </head>
 <body class="body">
     <header class="header">
-        <nav class="nav">
-            <a href="#home" id="home" class="Home">Home</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#Acerca de mi">Acerca de Mi</a>
-            <a href="#Mis habilidades">Mis habilidades</a>
-            <a href="#Portafolio">Mi portafolio</a>
-            <a href="#contacto">Contacto</a>
+        <a id='toogle' class="toogle-button" onclick="handleToogleClick()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="nav" id="navBar">
+            <a href="#home" class="home" onclick="closeNav()">Home</a>
+            <a href="#servicios" onclick="closeNav()">Servicios</a>
+            <a href="#Acerca de mi" onclick="closeNav()">Acerca de Mi</a>
+            <a href="#Mis habilidades" onclick="closeNav()">Mis habilidades</a>
+            <a href="#Portafolio" onclick="closeNav()" >Mi portafolio</a>
+            <a href="#contacto" onclick="closeNav()">Contacto</a>
+
         </nav>
     </header>
-    <section class="introduccion" >
-        <div class="informacion">
+    <section class="introduccion" id="home" >
+        <div class="informacion" >
             <div class="infoSoy">
                 <h1>Soy</h1>
                 <div class="subrayado"></div>
@@ -29,11 +36,12 @@
                 <h2>diseñador UX/UI</h2>
             </div>
             <div class="experiencia">
-                <h2 class="textoAzulClaro">3 años</h2>
-                <h2>experiencia</h2>
+                <h2 class="tres_años">3 años</h2>
+                <h2 class="texto_experiencia">experiencia</h2>
+                <div class="logo_red">
                 <img src="/Assets/cib_linkedin-in.svg"class="logos_redes">
                 <img src="./Assets/ant-design_instagram-filled.svg"class="logos_redes">
-                <img src="./Assets/ant-design_twitter-outlined.svg"class="logos_redes">
+                <img src="./Assets/ant-design_twitter-outlined.svg"class="logos_redes"></div>
             </div>
         </div>
             <div class="circulo">
@@ -50,7 +58,7 @@
         </section>
         <div class="contenido">
             <h3 id="Acerca de mi" class="textoAzulClaro" >Acerca de mí</h3>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat at laudantium incidunt rem soluta quia maxime blanditiis laborum sint hic, rerum atque! Quasi, mollitia nisi corrupti voluptas quos soluta.</h4>
+            <h4>Hola, soy Walter Marin. Soy bogotano, aunque soy economista de profesion ahora soy estudiante de programacion en Academlo y quiero mostrarte mi trabajo en esta página web</h4>
         </div>
         <div class="servicio">
             <div h3 id="servicios" class="textoAzulClaro">Servicios</h3>
@@ -102,7 +110,7 @@
                 </div>
             </div>
             <div  class="portafolio">
-                <h3 id="Portafolio" class="textoAzulClaro">Mi portafolio</h3>
+                <h3 id="Portafolio" class="textoAzulClaro">Mi portafolio</h3><br>
                 <img class="imagenes" src="./Assets/Rectangle 65.jpg">
                 <img class="imagenes" src="./Assets/image 4.jpg">
                 <img class="imagenes" src="./Assets/Rectangle 53.jpg">
